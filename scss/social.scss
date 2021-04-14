@@ -1,0 +1,43 @@
+@import "colors.scss";
+@import "constants.scss";
+@import "fonts.scss";
+
+.link {
+		color: $fg-1;
+		font-size: $font-section-size;
+		transition: 0.3s;
+		text-decoration: none;
+		&:hover {
+			color: $accent-2;
+		}
+}
+
+.social_links {
+	transition: 400s;
+	a {
+		color: $fg-1;
+		font-size: 1.5rem;
+		transition: 0.3s;
+		&:hover {
+			color: $accent-2;
+		}
+	}
+	ul {
+		list-style-type: none;
+	}
+	li {
+		display: inline;
+		margin-right: 0.8rem;
+	}
+}
+
+.social-icon {
+	color: inherit;
+	transition: 0.3s;
+	&:hover &:visited:hover {
+		color: $accent-2;
+	}
+	&:visited {
+		color: inherit;
+	}
+}
