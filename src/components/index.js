@@ -13,6 +13,7 @@ import HomeHeader from "./HomeHeader.svelte";
 import PageTemplate from "./PageTemplate.svelte";
 
 import ProjectCard from "./ProjectCard.svelte";
+import ProjectHeader from "./ProjectHeader.svelte";
 import ProjectList from "./ProjectList.svelte";
 
 import SocialLinks from "./SocialLinks.svelte";
@@ -34,6 +35,7 @@ export {
     PageTemplate,
 
     ProjectCard,
+    ProjectHeader,
     ProjectList,
 
     SocialLinks,

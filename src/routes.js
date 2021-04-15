@@ -8,7 +8,6 @@ export default {
     "/experience/:id": Experience,
     "/project/:id": Project,
 
-
     // The catch-all route must always be last
     "*": NotFound
 };

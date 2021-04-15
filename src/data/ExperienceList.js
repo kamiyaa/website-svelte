@@ -1,3 +1,15 @@
+import IBMSummary from "../data/experiences/IBMSummary.svelte";
+import IBM from "../data/experiences/IBM.svelte";
+
+import OPSSummary from "../data/experiences/OPSSummary.svelte";
+import OPS from "../data/experiences/OPS.svelte";
+
+import SpireTradingSummary from "./experiences/SpireTradingSummary.svelte";
+import SpireTrading from "./experiences/SpireTrading.svelte";
+
+import UofTSummary from "../data/experiences/UofTSummary.svelte";
+import UofT from "../data/experiences/UofT.svelte";
+
 const EXPERIENCE_LIST =
 [
     {
@@ -10,6 +22,8 @@ const EXPERIENCE_LIST =
         tags: [
             "Python", "FSA", "Arbitrage", "Bitcoin", "TSX", "QBTC.U", "matplotlib", "numpy"
         ],
+        summary: SpireTradingSummary,
+        content: SpireTrading,
     },
     {
         title: "Open Source Runtime Developer",
@@ -22,6 +36,8 @@ const EXPERIENCE_LIST =
             "C", "Java", "Docker", "Jenkins", "Appsody", "Maven", "Capstone", "Linux", "AIX",
             "z/OS", "PowerPC", "Systemz",
         ],
+        summary: IBMSummary,
+        content: IBM,
     },
     {
         title: "Teaching Assistant",
@@ -40,6 +56,8 @@ const EXPERIENCE_LIST =
             "OOP/SOLID design",
             "Pipes/Sockets",
         ],
+        summary: UofTSummary,
+        content: UofT,
     },
     {
         title: "Application Programmer",
@@ -55,6 +73,8 @@ const EXPERIENCE_LIST =
             "HP Quality Center",
             "HP UFT",
         ],
+        summary: OPSSummary,
+        content: OPS,
     },
 ];
 

@@ -1,5 +1,8 @@
 <script>
 export let contribution;
+
+import { CONTRIBUTION_LIST } from "../data";
+
 </script>
 
 <div class="horizontal_card">
@@ -19,7 +22,7 @@ export let contribution;
             </div>
         </div>
         <div class="horizontal_card_info">
-            {contribution.html}
+            <svelte:component this={contribution.content}/>
         </div>
     </div>
 </div>

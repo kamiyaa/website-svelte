@@ -1,6 +1,6 @@
 <div>
     <h5>Background</h5>
-    <p>At first, I wanted to learn<b>C++</b>
+    <p>At first, I wanted to learn <b>C++</b>
     because it had all the features of a modern language while still being
     comparable to C in performance. While researching about C++,
     I stumbled across Rust, the shiny new language that supposedly competes
@@ -31,6 +31,7 @@
     is no longer used and can be freed. Rust also will only allow either
     n immutable borrows or 1 mutable borrow at any given time.
     In the beginning, it was very hard fighting with the borrow checker. For example:
+    </p>
     <div class="code-block">
         <code>
         let myStruct = myStruct::new();
@@ -40,6 +41,7 @@
         func(&mut myStruct);
         </code>
     </div>
+    <p>
     This code would not compile because we are passing myStruct as a
     mutable variable into while myVar holds an immutable reference to myStruct.
     <br/>

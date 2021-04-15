@@ -1,34 +1,35 @@
 <script>
-export const params = {}
+export let params = {}
 
 import { PROJECT_LIST } from "../data";
-import { PageTemplate } from "../components";
+import { PageTemplate, ProjectHeader } from "../components";
+
+const idx = params.id;
 
 let project = null;
-if (params.id < PROJECT_LIST.length) {
-    project = PROJECT_LIST[params.id];
+if (idx < PROJECT_LIST.length) {
+    project = PROJECT_LIST[idx];
 }
-
-console.log(project);
+console.log(idx, project);
 </script>
 
-
-{#if project}
-    <PageTemplate>
+<PageTemplate>
+    {#if project}
         <div class="article">
             <div class="article-content">
             <ProjectHeader project={project}/>
-            {project.content}
+            <svelte:component this={project.content}/>
             </div>
         </div>
-    </PageTemplate>
-{/if}
-{#if !project}
-    <PageTemplate>
+    {/if}
+
+    {#if !project}
         <div class="article">
             <div class="article-content">
             <div>Project Not Found</div>
             </div>
         </div>
-    </PageTemplate>
-{/if}
+    {/if}
+
+</PageTemplate>
+

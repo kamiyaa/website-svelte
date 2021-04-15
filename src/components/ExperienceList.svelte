@@ -7,6 +7,6 @@ import ExperienceCard from "./ExperienceCard.svelte";
 
 <div class="flex_card_list">
     {#each list as v, i}
-        <ExperienceCard experience={v} route="/experience/${i}"/>
+        <ExperienceCard experience={v} route={`/#/experience/${i}`}/>
     {/each}
 </div>

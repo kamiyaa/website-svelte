@@ -1,3 +1,8 @@
+import Capstone from "./contributions/Capstone.svelte";
+import Jenkins from "./contributions/Jenkins.svelte";
+import Maven from "./contributions/Maven.svelte";
+import Portage from "./contributions/Portage.svelte";
+
 const CONTRIBUTION_LIST =
 [
     {
@@ -6,6 +11,7 @@ const CONTRIBUTION_LIST =
         icon_url: "https://github.com/kamiyaa/kamiyaa.github.io/releases/download/0.1.0/capstone_icon.png",
         description: "Multi-platform, multi-architecture disassembly framework",
         languages: [ "C" ],
+        content: Capstone,
     },
     {
         name: "Portage",
@@ -13,6 +19,7 @@ const CONTRIBUTION_LIST =
         icon_url: "https://upload.wikimedia.org/wikipedia/commons/4/41/Gentoo-logo-dark.svg",
         description: "Official package manager and distribution system for Gentoo",
         languages: [ "Shell" ],
+        content: Portage,
     },
     {
         name: "Maven",
@@ -20,6 +27,7 @@ const CONTRIBUTION_LIST =
         icon_url: "https://github.com/kamiyaa/kamiyaa.github.io/releases/download/0.1.0/maven_icon.png",
         description: "Maven Dockerfiles",
         languages: [ "Scripting" ],
+        content: Maven,
     },
     {
         name: "Jenkins",
@@ -27,6 +35,7 @@ const CONTRIBUTION_LIST =
         icon_url: "https://github.com/kamiyaa/kamiyaa.github.io/releases/download/0.1.0/jenkins_icon.png",
         description: "Free and open source automation server",
         languages: [ "Scripting" ],
+        content: Jenkins,
     },
 ];
 
