@@ -7,6 +7,7 @@
     </p>
     <div>
         <iframe
+            title="SpireTrading YouTube"
             width="853"
             height="480"
             src="https://www.youtube.com/embed/c1iEh6TlQeQ"

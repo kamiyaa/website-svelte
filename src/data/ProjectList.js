@@ -71,7 +71,7 @@ const PROJECT_LIST =
         url: "https://github.com/kamiyaa/website-wasm",
         technologies: [ "React.js", "Rust", "Svelte", "Sass" ],
         owner: "kamiyaa",
-        repo_name: "kamiyaa.github.io",
+        repo_name: "website-wasm",
         preview_url: "https://github.com/kamiyaa/kamiyaa.github.io/releases/download/0.1.0/website_wasm_screenshot.png",
         preview_thumbnail_url:
             "https://github.com/kamiyaa/kamiyaa.github.io/releases/download/0.1.0/website_wasm_screenshot.png",
