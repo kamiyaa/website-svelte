@@ -69,13 +69,21 @@ const PROJECT_LIST =
         name: "WebAssembly Website",
         description: "Personal Website",
         url: "https://github.com/kamiyaa/website-wasm",
-        technologies: [ "React.js", "Rust", "Svelte", "Sass" ],
+        technologies: [ "React.js", "Rust", "Svelte", "Sass", "Yew" ],
         owner: "kamiyaa",
         repo_name: "website-wasm",
         preview_url: "https://github.com/kamiyaa/kamiyaa.github.io/releases/download/0.1.0/website_wasm_screenshot.png",
         preview_thumbnail_url:
             "https://github.com/kamiyaa/kamiyaa.github.io/releases/download/0.1.0/website_wasm_screenshot.png",
-        tags: [ "Javascript", "React", "React Hooks", "Sass", "npm" ],
+        tags: [
+            "Javascript",
+            "React",
+            "React Hooks",
+            "Rust",
+            "Svelte",
+            "Sass",
+            "Yew",
+        ],
         content: Website,
     },
 ];
