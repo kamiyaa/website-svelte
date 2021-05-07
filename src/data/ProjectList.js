@@ -13,8 +13,8 @@ const PROJECT_LIST =
         technologies: [ "Rust", "tui-rs", ],
         owner: "kamiyaa",
         repo_name: "joshuto",
-        preview_url: "https://github.com/kamiyaa/joshuto/raw/master/screenshot.png",
-        preview_thumbnail_url: "https://github.com/kamiyaa/joshuto/raw/master/screenshot.png",
+        preview_url: "https://raw.githubusercontent.com/kamiyaa/joshuto/main/screenshot.png",
+        preview_thumbnail_url: "https://raw.githubusercontent.com/kamiyaa/joshuto/main/screenshot.png",
         tags: [
             "Rust",
             "Termion",
