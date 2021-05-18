@@ -63,24 +63,10 @@
 }
 
 .project-github {
-	align-items: flex-end;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	margin: 0.4rem 0.4rem;
-
-	a {
-		color: accent-2;
-		transition: 500ms;
-		text-decoration: none;
-		&:hover {
-			color: $accent-1;
-		}
-		&:visited:hover {
-			color: $accent-1;
-			text-decoration: inherit;
-		}
-	}
 
 	ul {
 		display: inline;
@@ -88,10 +74,26 @@
 }
 
 .project-github-icon {
-	margin: 0 0.2rem 0 0.6rem;
+	margin: 0 0.3rem 0 0;
 	transition: 400ms;
 
 	&:hover {
 		color: $accent-1;
+	}
+}
+
+.project-github-link {
+	color: $accent-1;
+	transition: 500ms;
+	text-decoration: none;
+	&:visited {
+		color: $accent-1;
+	}
+	&:hover {
+		color: $accent-2;
+	}
+	&:visited:hover {
+		color: $accent-2;
+		text-decoration: inherit;
 	}
 }

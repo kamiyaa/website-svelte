@@ -50,32 +50,41 @@ if (GithubMap[key] === undefined) {
     <br/>
     <h6>{project.description}, {project.technologies.join(", ")}</h6>
     <div class="project-github">
-        <a target="_blank" href={project.url} rel="noopener noreferrer">
-            <i class="fab fa-github fa-2x"/>
-        </a>
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: flex-start">
+            <a
+                class="project-github-link"
+                target="_blank"
+                href={project.url} rel="noopener noreferrer">
+                <i
+                    style="margin-right: 1rem; font-size: 2.2rem;" class="fab fa-github project-github-link"/>
+            </a>
+        </div>
         {#if fetch_state.state == FETCH_STATE.FETCHING}
-            <div>Fetching Github metrics</div>
+            <div style="margin-right: 0.5rem;">
+                Fetching Github metrics
+            </div>
         {/if}
         {#if fetch_state.state == FETCH_STATE.DONE}
             <div style="display: flex; flex-direction: row; align-items: center; justify-content: flex-start">
-                <div class="project-github-icon">
-                    <i class="fas fa-star fa-lg"/>
+                <div style="font-size: 1.8rem;" class="project-github-icon">
+                    <i class="fas fa-star"/>
                 </div>
-                <div>
+                <div style="margin-right: 0.5rem;">
                     {project_stats.stargazers_count}
                 </div>
 
-                <div class="project-github-icon">
-                    <i class="fas fa-code-branch fa-lg"/>
+                <div style="font-size: 1.8rem;" class="project-github-icon">
+                    <i class="fas fa-code-branch"/>
                 </div>
-                <div>
+                <div style="margin-right: 0.5rem;">
                     {project_stats.forks_count}
                 </div>
             </div>
         {/if}
-
         {#if fetch_state.state == FETCH_STATE.ERROR}
-            <div>{fetch_state.data}</div>
+            <div style="margin-right: 0.5rem;">
+                {fetch_state.data}
+            </div>
         {/if}
     </div>
     <div class="tag-list-container">
