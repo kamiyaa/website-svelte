@@ -1,0 +1,22 @@
+@import 'colors.scss';
+@import 'constants.scss';
+@import 'fonts.scss';
+
+.link {
+	color: $fg-1;
+	font-size: $font-section-size;
+	transition: 0.3s;
+	text-decoration: none;
+	&:hover {
+		color: $accent-2;
+		text-decoration: inherit;
+	}
+	&:visited {
+		color: $fg-1;
+		text-decoration: inherit;
+	}
+	&:visited:hover {
+		color: $accent-2;
+		text-decoration: inherit;
+	}
+}

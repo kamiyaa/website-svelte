@@ -1,0 +1,66 @@
+@import 'colors.scss';
+@import 'constants.scss';
+@import 'fonts.scss';
+
+.footer {
+	align-items: flex-end;
+	background-color: $card-bg;
+	border-width: 0px;
+	color: $fg-2;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: $font-family-p;
+	justify-content: space-between;
+	margin: 2rem 0 0 0;
+	padding: 1rem 2rem 2rem 2rem;
+
+	a {
+		color: $accent-2;
+		text-decoration: none;
+		transition: 0.3s;
+		&:hover {
+			color: $accent-1;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		margin: 0.5rem 0;
+	}
+}
+
+.flex_group {
+	align-items: center;
+	display: inline-flex;
+	height: 100%;
+	margin: 0 0.8rem;
+}
+
+.footer-icon {
+	color: white;
+	font-size: 1.6rem;
+	margin-right: 0.8rem;
+	transition: 0.3s;
+	&:hover {
+		color: $accent-1;
+	}
+}
+
+.footer-link {
+	color: white;
+	font-size: 1rem;
+	transition: 0.3s;
+	&:hover {
+		color: $accent-1;
+	}
+}
+
+@media only screen and (max-width: $mobile-max-size) {
+	.footer {
+		justify-content: space-between;
+		padding: 1rem 0 0 0;
+	}
+}

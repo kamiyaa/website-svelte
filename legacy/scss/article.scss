@@ -1,0 +1,119 @@
+@import 'colors.scss';
+@import 'constants.scss';
+@import 'fonts.scss';
+
+.article {
+	background: rgba(0, 0, 0, 0);
+	color: $fg-2;
+	margin: 0rem 2rem;
+	font-family: $font-family-p;
+	font-size: $article-font-size;
+	overflow-x: auto;
+	z-index: 1;
+
+	$font-h1-size: 3rem;
+	$font-h2-size: $font-h1-size - 0.5rem;
+	$font-h3-size: $font-h2-size - 0.25rem;
+	$font-h4-size: $font-h3-size - 0.35rem;
+	$font-h5-size: $font-h4-size - 0.15rem;
+	$font-h6-size: $font-h5-size - 0.5rem;
+
+	h1 {
+		border-bottom: 3px solid black;
+		font-size: $font-h1-size;
+		font-weight: bold;
+		margin: 2rem 0 1rem 0;
+	}
+	h2 {
+		font-size: $font-h2-size;
+		font-weight: bold;
+		margin: 2rem 0 0 0;
+	}
+	h3 {
+		font-size: $font-h3-size;
+		font-weight: bold;
+		margin: 0.4rem 0 0 0;
+	}
+	h4 {
+		font-size: $font-h4-size;
+		margin: 0;
+	}
+	h5 {
+		font-size: $font-h5-size;
+		margin: 0;
+	}
+	h6 {
+		font-size: $font-h6-size;
+		margin: 0;
+		font-weight: normal;
+	}
+
+	p {
+		font-size: $article-font-size;
+		line-height: 1.4;
+		margin: 0;
+	}
+
+	li {
+		font-size: $article-font-size;
+	}
+	a {
+		color: $accent-2;
+		text-decoration: none;
+		transition: 0.3s;
+		&:hover {
+			color: $accent-1;
+		}
+	}
+}
+@media only screen and (max-width: $mobile-max-size) {
+	$font-h1-size: 2rem;
+	$font-h2-size: $font-h1-size - 0.1rem;
+	$font-h3-size: $font-h2-size - 0.2rem;
+	$font-h4-size: $font-h3-size - 0.5rem;
+	$font-h5-size: $font-h4-size;
+	$font-h6-size: $font-h5-size - 0.1rem;
+
+	.article {
+		margin: 0;
+		font-size: $article-font-size-mobile;
+		padding: 0.3rem 1.1rem 2rem 1.1rem;
+
+		h1 {
+			border-bottom: 2px solid black;
+			font-size: $font-h1-size;
+			font-weight: bold;
+		}
+		h2 {
+			font-size: $font-h2-size;
+			font-weight: bold;
+		}
+		h3 {
+			font-size: $font-h3-size;
+			font-weight: bold;
+		}
+		h4 {
+			font-size: $font-h4-size;
+			margin: 0;
+		}
+		h5 {
+			font-size: $font-h5-size;
+			margin: 0;
+		}
+		h6 {
+			font-size: $font-h6-size;
+			margin: 0;
+		}
+
+		p {
+			font-size: $article-font-size-mobile;
+		}
+		li {
+			font-size: $article-font-size-mobile;
+		}
+	}
+}
+
+.article-content {
+	padding: 0;
+}
