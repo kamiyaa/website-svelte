@@ -22,7 +22,7 @@
 		${BACKGROUND_COLOR['primary']}
 		${FONT_COLOR['primary']}
 		`;
-	
+
 	const childClass = `
 		animate-slide-fade-in
 		min-h-screen sm:px-6 px-4
@@ -32,9 +32,9 @@
 <main class:dark>
 	<div class={mainClass}>
 		<Navbar />
-			<div class={childClass}>
-				<slot />
-			</div>
+		<div class={childClass}>
+			<slot />
+		</div>
 		<Footer />
 	</div>
 </main>

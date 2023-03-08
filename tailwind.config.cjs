@@ -31,25 +31,16 @@ const config = {
 			colors: {
 				light: {
 					bg: {
-						primary: '#f0f0f0',
-						secondary: '#d1d6e5'
-					},
-					card: {
-						bg: {
-							default: '#d1d6e5'
-						}
-					},
-					link: {
-						default: '#7c90ff',
-						hover1: '#a0c5e7',
-						hover2: '#7c90ff'
+						primary: '#f7f5f1',
+						secondary: '#efece3',
+						tertiary: '#e5e0d1'
 					},
 					text: {
 						primary: '#0f0f0f',
 						secondary: '#1c1c1c',
-						tertiary: '#888888',
-						accent1: '#7c90ff',
-						accent2: '#a0c5e7'
+						tertiary: '#494949',
+						accent1: '#3c4680',
+						accent2: '#4e6273'
 					},
 					system: {
 						error: '#e57373'
@@ -58,17 +49,8 @@ const config = {
 				dark: {
 					bg: {
 						primary: '#232326',
-						secondary: '#2b2c2f'
-					},
-					card: {
-						bg: {
-							default: '#2b2c2f'
-						}
-					},
-					link: {
-						default: '#7c90ff',
-						hover1: '#a0c5e7',
-						hover2: '#7c90ff'
+						secondary: '#2b2c2f',
+						tertiary: '#37383c'
 					},
 					text: {
 						primary: '#f0f0f0',

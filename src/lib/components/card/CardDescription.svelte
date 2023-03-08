@@ -1,9 +1,11 @@
 <script lang="ts">
-	import { FONT_COLOR } from "$lib/types";
+	import { FONT_COLOR } from '$lib/types';
 </script>
 
-<div class={`
+<div
+	class={`
     ${FONT_COLOR['tertiary']}
-`}>
-    <slot />
+`}
+>
+	<slot />
 </div>

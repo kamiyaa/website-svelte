@@ -8,8 +8,8 @@
 
 <div>
 	<h2 class={h2Header}>Contact</h2>
-	<div class="h-2"/>
+	<div class="h-2" />
 	<p>Phone: +1 647-901-5654</p>
-	<div class="h-4"/>
+	<div class="h-4" />
 	<p>Email: {CONTACT_EMAIL}</p>
 </div>

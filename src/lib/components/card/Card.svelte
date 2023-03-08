@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { BACKGROUND_COLOR } from '$lib/types/Background';
 
-  const verticalCard = `
+	const verticalCard = `
     ${BACKGROUND_COLOR['secondary']}
     hover:shadow-md
     dark:hover:shadow-md-dark
@@ -15,5 +15,5 @@
 </script>
 
 <div class={verticalCard}>
-    <slot />
+	<slot />
 </div>

@@ -11,26 +11,23 @@
 	export let project: ProjectDetails;
 </script>
 
-
 <Card class="sm:w-80 w-full sm:mx-4 mx-0">
 	<a
-    class={`
+		class={`
       ${FONT_COLOR['accent1']}
       no-underline
       `}
-      rel="noreferrer"
-      href={project.url}
-      target="_blank">
-    <CardImage
-      class="max-h-32"
-      alt={project.name}
-      src={project.previewUrl} />
-    <CardContent>
-      <CardTitle>{project.name}</CardTitle>
-      <CardSubtitle>{project.technologies.join(', ')}</CardSubtitle>
-      <CardDescription>
-        {project.description}
-      </CardDescription>
-    </CardContent>
-  </a>
+		rel="noreferrer"
+		href={project.url}
+		target="_blank"
+	>
+		<CardImage class="max-h-32" alt={project.name} src={project.previewUrl} />
+		<CardContent>
+			<CardTitle>{project.name}</CardTitle>
+			<CardSubtitle>{project.technologies.join(', ')}</CardSubtitle>
+			<CardDescription>
+				{project.description}
+			</CardDescription>
+		</CardContent>
+	</a>
 </Card>
